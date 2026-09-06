@@ -18,9 +18,10 @@ a { color: inherit; text-decoration: none; }
 .wordmark { font: 700 25px/1 "DM Mono", monospace; letter-spacing: 0; }
 .wordmark span { color: var(--coral); }
 nav { display: flex; gap: 28px; font-size: 14px; font-weight: 600; }
-nav a, .resume-link { border-bottom: 1px solid transparent; }
-nav a:hover, .resume-link:hover { border-color: currentColor; }
-.resume-link { font: 500 13px/1 "DM Mono", monospace; }
+.header-links { display: flex; align-items: center; gap: 14px; }
+.header-links a { border-bottom: 1px solid transparent; font: 500 13px/1 "DM Mono", monospace; }
+nav a { border-bottom: 1px solid transparent; }
+nav a:hover, .header-links a:hover { border-color: currentColor; }
 
 .hero { min-height: 620px; padding-top: clamp(76px, 12vw, 170px); display: flex; flex-direction: column; justify-content: space-between; background-image: linear-gradient(90deg, transparent 49.9%, rgba(23, 33, 30, .08) 50%, transparent 50.1%); }
 .eyebrow { margin: 0; color: var(--muted); font: 500 12px/1.4 "DM Mono", monospace; text-transform: uppercase; letter-spacing: 0; }
